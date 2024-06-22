@@ -50,8 +50,11 @@ export const Content = styled(Dialog.Content)`
          margin-top: 1.5rem;
          cursor: pointer;
          transition: 0.3s ease-in-out;
-
-         &:hover {
+         &:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+         }
+         &:not(:disabled):hover {
             background: ${(props) => props.theme['gray-300']};
          }
       }
@@ -66,6 +69,11 @@ export const CloseButton = styled(Dialog.Close)`
    line-height: 0;
    cursor: pointer;
    color: ${(props) => props.theme['gray-300']};
+   transition: 0.3s ease-in-out;
+
+   &:hover {
+      scale: 1.1;
+   }
 `;
 export const TransactionType = styled(RadioGroup.Root)`
    display: grid;
