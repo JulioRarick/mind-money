@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, ReactNode, useState } from 'react';
 import { ThemeProvider as ThemeProviderStyled } from 'styled-components';
 import { defaultTheme } from '../styles/themes/default';
