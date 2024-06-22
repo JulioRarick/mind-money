@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { ReactNode, useEffect, useState } from 'react';
 // import { api } from '../lib/axios';
 import { createContext } from 'use-context-selector';
@@ -98,7 +99,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
    useEffect(() => {
       fetchTransactions();
-   }, []);
+   }, [fetchTransactions]);
 
    return (
       <TransactionsContext.Provider
