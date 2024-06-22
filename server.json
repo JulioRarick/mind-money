@@ -1,3 +1,60 @@
 {
-   "transactions": []
+   "transactions": [
+      {
+         "id": 1,
+         "description": "Desenvolvimento de Site",
+         "type": "income",
+         "category": "Venda",
+         "value": 14000,
+         "createdAt": "2024-06-22T02:51:26.908Z"
+      },
+      {
+         "id": 2,
+         "description": "Hambúrguer",
+         "type": "outcome",
+         "category": "Alimentação",
+         "value": 40,
+         "createdAt": "2024-06-22T02:30:26.908Z"
+      },
+      {
+         "id": 3,
+         "description": "Curso React",
+         "type": "outcome",
+         "category": "Educação",
+         "value": 1999,
+         "createdAt": "2024-06-22T02:23:26.908Z"
+      },
+      {
+         "description": "Desenvolvimento de app",
+         "category": "Venda",
+         "value": 10000,
+         "type": "income",
+         "createdAt": "2024-06-22T06:08:29.297Z",
+         "id": 4
+      },
+      {
+         "description": "Almoço",
+         "category": "Alimentação",
+         "value": 49,
+         "type": "outcome",
+         "createdAt": "2024-06-22T06:26:22.720Z",
+         "id": 5
+      },
+      {
+         "description": "Curso",
+         "category": "Educação",
+         "value": 900,
+         "type": "outcome",
+         "createdAt": "2024-06-22T06:26:53.855Z",
+         "id": 6
+      },
+      {
+         "description": "Salário",
+         "category": "Trabalho",
+         "value": 50000,
+         "type": "income",
+         "createdAt": "2024-06-22T06:35:04.145Z",
+         "id": 7
+      }
+   ]
 }
