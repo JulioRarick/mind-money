@@ -73,12 +73,18 @@ export function NewTransactionModal() {
                   required
                   {...register('value', { valueAsNumber: true })}
                />
-               <input
-                  type='text'
-                  placeholder='Categoria'
-                  required
-                  {...register('category')}
-               />
+               <select required {...register('category')}>
+                  <option value='Alimentação'>Alimentação</option>
+                  <option value='Água'>Água</option>
+                  <option value='Cartão'>Cartão</option>
+                  <option value='Energia'>Energia</option>
+                  <option value='Educação'>Educação</option>
+                  <option value='Internet'>Internet</option>
+                  <option value='Saúde'>Saúde</option>
+                  <option value='Lazer'>Lazer</option>
+                  <option value='Trabalho'>Trabalho</option>
+                  <option value='Outros'>Outros</option>
+               </select>
                <Controller
                   control={control}
                   name='type'

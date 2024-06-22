@@ -30,6 +30,9 @@ export const SummaryCard = styled.div<SummaryCardProps>`
       color: ${(props) => props.theme['gray-200']};
       font-size: 1.1rem;
    }
+   span {
+      color: ${(props) => props.theme['yellow-300']};
+   }
    strong {
       display: block;
       margin-top: 1rem;

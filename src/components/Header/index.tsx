@@ -3,11 +3,21 @@ import {
    HeaderContainer,
    HeaderContent,
    NewTransactionsButton,
+   SwitchThemeContainer,
+   SwitchThemeRoot,
+   SwitchThemeThumb,
 } from './styles';
 import logoImage from '../../assets/logo.svg';
 import { NewTransactionModal } from '../NewTransactionModal';
+import { Palette } from 'phosphor-react';
+import { useContext } from 'react';
+import { ThemeContext, ThemeType } from '../../contexts/ThemeContext';
 
 export function Header() {
+   const { toggleTheme, theme } = useContext(ThemeContext);
+
+   const isDarkMode = theme === ThemeType.dark;
+
    return (
       <HeaderContainer>
          <HeaderContent>
@@ -19,6 +29,13 @@ export function Header() {
                <NewTransactionModal />
             </Dialog.Root>
          </HeaderContent>
+         <SwitchThemeContainer>
+            <Palette size={26} />
+            <label>Tema</label>
+            <SwitchThemeRoot checked={isDarkMode} onCheckedChange={toggleTheme}>
+               <SwitchThemeThumb />
+            </SwitchThemeRoot>
+         </SwitchThemeContainer>
       </HeaderContainer>
    );
 }

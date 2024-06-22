@@ -40,6 +40,16 @@ export const Content = styled(Dialog.Content)`
             color: ${(props) => props.theme['gray-500']};
          }
       }
+      select {
+         border-radius: 6px;
+         border: 0;
+         background: ${(props) => props.theme['gray-300']};
+         color: ${(props) => props.theme['gray-900']};
+         padding: 1rem;
+         font-size: 1rem;
+         font-weight: 200;
+         color: ${(props) => props.theme['gray-500']};
+      }
       button[type='submit'] {
          height: 58px;
          border: 0;
