@@ -5,6 +5,10 @@ export const HeaderContainer = styled.header`
    background: ${(props) => props.theme['gray-300']};
    padding: 2.5rem 0 7.5rem;
    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+   @media (max-width: 600px) {
+      padding: 2.5rem 0 6rem;
+   }
 `;
 export const HeaderContent = styled.div`
    width: 100%;

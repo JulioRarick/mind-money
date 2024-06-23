@@ -10,14 +10,14 @@ export function Summary() {
          <SummaryCard>
             <header>
                <span>Entradas</span>
-               <ArrowCircleUp size={34} color='#22c55e' />
+               <ArrowCircleUp size={34} color='#15803d' />
             </header>
             <strong>{valueFormatter.format(summary.income)}</strong>
          </SummaryCard>
          <SummaryCard>
             <header>
                <span>Saídas</span>
-               <ArrowCircleDown size={34} color='#ef4444' />
+               <ArrowCircleDown size={34} color='#BF4444' />
             </header>
             <strong>{valueFormatter.format(summary.outcome)}</strong>
          </SummaryCard>

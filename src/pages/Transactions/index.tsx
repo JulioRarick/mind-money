@@ -4,8 +4,13 @@ import { SearchForm } from './components/SearchForm';
 import { TransactionsContext } from '../../contexts/TransactionsContext';
 import {
    PriceHighlight,
+   FirstTableData,
+   SecondTableData,
+   TableRow,
    TransactionsContainer,
    TransactionsTable,
+   ThirdTableData,
+   ForthTableData,
 } from './styles';
 import { dateFormatter, valueFormatter } from '../../utils/formatter';
 import { useContextSelector } from 'use-context-selector';
@@ -24,21 +29,25 @@ export function Transactions() {
                <tbody>
                   {transactions.map((transaction) => {
                      return (
-                        <tr key={transaction.id}>
-                           <td width='50%'>{transaction.description}</td>
-                           <td>
+                        <TableRow key={transaction.id}>
+                           <FirstTableData>
+                              {transaction.description}
+                           </FirstTableData>
+                           <SecondTableData>
                               <PriceHighlight variant={transaction.type}>
                                  {transaction.type === 'outcome' && '- '}
                                  {valueFormatter.format(transaction.value)}
                               </PriceHighlight>
-                           </td>
-                           <td>{transaction.category}</td>
-                           <td>
+                           </SecondTableData>
+                           <ThirdTableData>
+                              {transaction.category}
+                           </ThirdTableData>
+                           <ForthTableData>
                               {dateFormatter.format(
                                  new Date(transaction.createdAt)
                               )}
-                           </td>
-                        </tr>
+                           </ForthTableData>
+                        </TableRow>
                      );
                   })}
                </tbody>

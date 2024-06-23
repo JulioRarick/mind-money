@@ -1,4 +1,3 @@
-import * as Dialog from '@radix-ui/react-dialog';
 import {
    CloseButton,
    Content,
@@ -13,6 +12,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { Controller, useForm } from 'react-hook-form';
 import { TransactionsContext } from '../../contexts/TransactionsContext';
 import { useContextSelector } from 'use-context-selector';
+import * as Dialog from '@radix-ui/react-dialog';
 
 const newTransactionFormSchema = z.object({
    description: z.string(),

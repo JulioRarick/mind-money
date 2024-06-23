@@ -11,12 +11,12 @@ export const darkTheme = {
    'gray-100': '#18181b',
 
    'green-100': '#86efac',
-   'green-200': '#4ade80',
-   'green-300': '#22c55e',
-   'green-400': '#22c55e',
-   'green-500': '#22c55e',
+   'green-200': '#7DB372',
+   'green-300': '#1F2E1C',
+   'green-400': '#53755C',
+   'green-500': '#3F783F',
    'green-600': '#166534',
-   'green-800': '#14532d',
+   'green-800': '#374E3D',
    'green-900': '#052e16',
 
    'red-700': '#ef4444',
