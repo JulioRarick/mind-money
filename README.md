@@ -21,3 +21,20 @@ MindMoney é um aplicativo desenvolvido em React que tem como objetivo auxiliar 
 
 ---
 
+## Description
+
+MindMoney is an application developed in React aimed at helping users with personal financial management. The project was created using Vite for fast and efficient development, styled-components for modern and dynamic styling, and TypeScript. The application supports both light and dark themes, providing a personalized and pleasant user experience.
+
+## Technologies Used
+
+- **React**: JavaScript library for building user interfaces.
+- **Vite**: Fast and modern build tool.
+- **styled-components**: Library for component styling with theme support.
+- **json-server**: Simulates a RESTful API for data storage and manipulation.
+
+## Features
+
+- Management of income and expenses.
+- Support for light and dark themes.
+- Intuitive interface.
+
